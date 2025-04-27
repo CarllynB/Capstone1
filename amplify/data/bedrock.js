@@ -29,9 +29,9 @@ export function request(ctx) {
         }),
       },
     };
-}
+  }
   
-export function response(ctx) {
+  export function response(ctx) {
     // Parse the response body
     const parsedBody = JSON.parse(ctx.result.body);
     // Extract the text content from the response
@@ -40,4 +40,4 @@ export function response(ctx) {
     };
     // Return the response
     return res;
-}
+  }
